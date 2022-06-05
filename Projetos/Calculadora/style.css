@@ -1,0 +1,36 @@
+@charset 'UTF-8';
+
+body{
+    background-color: #28104E;
+}
+section{
+    background-color: rgb(54, 54, 54);
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    margin-top: 8%;
+    padding-top: 30px;
+    border-radius: 10px;
+    border: 10px solid black;
+    box-shadow: 2px 2px 2px black;
+}
+div#resultado{
+    background-color: rgba(43, 122, 43, 0.623);
+    text-align: center;
+    line-height: 37px;
+    margin-top: 2000px;
+    margin: auto;
+    width: 400px;
+    height: 40px;
+}
+div#numeros{
+    padding: 20px;
+
+}
+
+input.valor{
+    padding: 15px;
+    padding-right: 20px;
+    display: inline-block;
+}
+
