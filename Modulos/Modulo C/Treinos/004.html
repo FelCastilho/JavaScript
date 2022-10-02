@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinando DOM</title>
+    <style>
+        body{
+            font: normal 10pt arial;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Criando calculadora com soma e com subtração</h1>
+
+    <h2>Somando dois valores</h2>
+    <input type="number" name="boxn1" id="boxn1"> +
+    <input type="number" name="boxn2" id="boxn2">
+    <input type="button" value="somar" onclick="somar()">
+
+    <div id="resultadomais">Resultado aqui!</div>
+
+    <hr>
+
+    <h2>Subtraindo dois valores</h2>
+
+    <input type="number" name="boxn3" id="boxn3"> -
+    <input type="number" name="boxn4" id="boxn4">
+    <input type="button" value="subtrair" onclick="subtrair()">
+
+    <div id="resultadomenos">Resultado aqui!</div>
+
+    <script>
+
+        //Criando calculadora de soma 
+
+        function somar(){
+
+            //Atribuindo as variaveis
+
+            var txtn1 = document.querySelector('input#boxn1')
+            var txtn2 = document.querySelector('input#boxn2')
+            var resmais = document.querySelector('div#resultadomais')
+
+            //Convertendo os valores e criando variavel pra somar
+
+            var n1 = Number(txtn1.value)
+            var n2 = Number(txtn2.value)
+            var resultadomais = n1 + n2
+
+            resmais.innerHTML = `A soma entre ${n1} e ${n2} é igual a ${resultadomais}`
+        }
+
+        function subtrair(){
+
+            //Atribuindo as variaveis
+
+            var txtn3 = document.querySelector('input#boxn3')
+            var txtn4 = document.querySelector('input#boxn4')
+            var resmenos = document.querySelector('div#resultadomenos')
+
+            //Corventendo os valores e criado variavel pra diminuir
+
+            var n3 = Number(txtn3.value)
+            var n4 = Number(txtn4.value)
+            var resultadomenos = n3 - n4
+
+            resmenos.innerHTML = `A subtração entre ${n3} e ${n4} é igual a ${resultadomenos}`
+        }
+    </script>
+</body>
+</html>
