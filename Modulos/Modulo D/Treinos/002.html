@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multas</title>
+    <style>
+        body{
+            background-color: lightskyblue;
+            font: normal 10pt arial;
+        }
+        div#box-multas{
+            background-color: white;
+            width: 400px;
+            height: 400px;
+            margin: auto;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 1px 1px 1px black;
+
+        }
+        #box-multas > h1 {
+            padding-top: 30px;
+        }
+       
+    </style>
+</head>
+<body>
+
+    <div id="box-multas">
+
+
+        <h1>Multas</h1>
+        <input type="number" name="txtvel" id="txtvel">
+        <input type="button" value="Calcular" onclick="calcular()">
+
+        <div id="resultado"><p>Resultado</p></div>
+
+    </div>
+
+
+    <script>
+
+        function calcular(){
+
+            //Atribuindo as variaveis
+
+            var vel = 80
+            var nvel = document.querySelector('input#txtvel')
+            var res = document.querySelector('div#resultado')
+            var caixa = document.querySelector('dix#box-multas')
+            
+            //Convertendo valores
+
+            var nvel = (nvel.value)
+
+            //Impondo as condições
+
+            res.innerHTML += `Velocidade atual: ${nvel} Km/Hr </br>` 
+
+            if (nvel > vel){
+                res.innerHTML += `Você foi MULTADO! A velocidade permitida é de ${vel} Km/Hr`
+
+
+            }else{
+                res.innerHTML += `Dirija com segurança!`
+            }
+
+
+            
+        }
+
+        
+    </script>
+</body>
+</html>

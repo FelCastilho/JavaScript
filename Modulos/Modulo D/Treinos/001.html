@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site </title>
+</head>
+<body>
+    <h1>Diga o seu país de origem:</h1>
+
+    <p>Lembre-se de usar letras maiúsculas no inicio</p>
+
+    <input type="text" name="txtpais" id="txtpais" placeholder="Ex: Brasil">
+
+    <input type="button" value="Registrar" onclick="registrar()"> 
+
+    <div id="resultado"><p>Resultado aqui!</p></div>
+
+    <script>
+
+        function registrar(){
+
+            //Atribuindo as variaveis
+
+            var pais = document.querySelector('input#txtpais')
+            var res = document.getElementById('resultado')
+
+            //Impondo as condições
+
+
+
+            if (pais == 'brasil'){
+                res.innerHTML = 'Você é Brasileiro!'
+            }else{
+                res.innerHTML = 'Você NÃO é brasileiro!'
+            }
+
+        }
+    </script>
+</body>
+</html>
