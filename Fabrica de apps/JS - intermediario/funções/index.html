@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="area">
+
+    </div>
+
+    <br><br>
+
+    <button onclick="entrar()">Entrar</button>
+
+    <!--------------------->
+
+    <div id="area">
+
+    </div>
+
+    <br><br>
+
+    <button onclick="entrar2('Coutinho', '21')">Entrar</button>
+    
+    <script>
+
+            
+
+        function entrar(){
+            var area = document.getElementById('area')
+            var texto = document = prompt('Digite seu nome: ')
+
+            area.innerHTML = 'Bem vindo ' + texto
+
+            //Colocando condição para a caixa não ficar vazia
+            if (texto == '' || texto == null){
+                alert('A caixa não pode ficar vazia!')
+                area.innerHTML = 'Bem vindo ...'
+            }
+        }
+
+        function entrar2(sobrenome, idade){
+            var area = document.getElementById('area')
+            var texto = document = prompt('Digite seu nome: ')
+
+            area.innerHTML = `Olá ${texto} ${sobrenome} você tem ${idade}`
+        }
+    </script>
+</body>
+</html>

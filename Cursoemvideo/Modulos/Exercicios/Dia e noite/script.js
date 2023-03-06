@@ -5,13 +5,14 @@ function carregar(){
 var agora = new Date()
 var hora = agora.getHours()
 var minuto = agora.getMinutes()
+var segundos = agora.getSeconds()
 var msg = document.getElementById('mensagem')
 var img = document.getElementById('imagem')
-var horaatual= document.getElementById('horario')
+var horaatual = document.getElementById('horario')
 
 //Mostrando a hora para o usuário
 
-horaatual.innerHTML = `Agora são: ${hora}:${minuto} `
+horaatual.innerHTML = `Agora são: ${hora}:${minuto}:${segundos} `
 
 
 if (hora < 12){
