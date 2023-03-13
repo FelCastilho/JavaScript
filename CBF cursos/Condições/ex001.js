@@ -10,7 +10,7 @@ if (n1 > 10 ){
 }else if ( n1 > 5){
     console.log('Numeral esta entre 6 e 10')
 }else{
-    console.log('Numeral menor ou igal a 5')
+    console.log('Numeral menor ou igual a 5')
 }
 
 console.log('Fim do programa')
