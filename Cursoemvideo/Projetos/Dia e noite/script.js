@@ -8,7 +8,6 @@ function carregar(){
     let res = document.getElementById('result')
     let img = document.getElementById('image')
 
-
     res.innerHTML = `Agora são ${hour}:${minutes}`
 
     if (hour < 12){
